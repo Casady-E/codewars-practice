@@ -13,7 +13,7 @@ XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
 XO("zzoo") => false
 */
 
-
+//Submitted Answer
 function XO(str) {
 //check for o and place into array, find length of array
   let oCount = [...str].filter(l => l === 'o').length;
@@ -35,3 +35,11 @@ console.log(XO("xooxx"))
 console.log(XO("ooxXm"))
 console.log(XO("zpzpzpp"))
 console.log(XO("zzoo"))
+
+
+//Best Practice Answer
+function XO(str) {
+  let x = str.match(/x/gi);
+  let o = str.match(/o/gi);
+  return (x && x.length) === (o && o.length);
+}
