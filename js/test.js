@@ -1,24 +1,23 @@
 /*
-Even Or Odd
+Basic Mathematical Operations
 8kyu
 
-Create a function (or write a script in Shell) that takes an integer as an argument
-and returns "Even" for even numbers or "Odd" for odd numbers.
+Your task is to create a function that does four basic mathematical operations.
+
+The function should take three arguments - operation(string/char), value1(number), value2(number).
+The function should return result of numbers after applying the chosen operation.
+
+
 */
 
 
-function even_or_odd(number) {
-if (typeof number === 'string') {
-    return "Error";
-  }else if(number % 2 === 0){
-    return "Even";
-  } else if (number % 2 != 0){
-    return "Odd";
-}
+function basicOp(operation, value1, value2)
+{
+
 }
 
-console.log(even_or_odd(2));
-console.log(even_or_odd(0));
-console.log(even_or_odd(7));
-console.log(even_or_odd(1));
-console.log(even_or_odd("poop"));
+console.log("Basic tests\n");
+console.log(basicOp('+', 4, 7)); //11
+console.log(basicOp('-', 15, 18)); //-3
+console.log(basicOp('*', 5, 5)); //25
+console.log(basicOp('/', 49, 7)); //7
