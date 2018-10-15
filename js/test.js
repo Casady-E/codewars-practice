@@ -10,6 +10,22 @@ Note: if there is nothing to sum, the sum is default to 0.
 
 */
 
+function sumOfPositive(array){
+  let arraySum = [];
+  array.forEach(function(value, index, array){
+    if (value > 0){
+      arraySum.push(value);
+      console.log(arraySum);
+    } else if (value < 0){
+      console.log("Not Positive");
+    }
+    console.log(arraySum.reduce(answer));
+  })
+
+}
+
+sumOfPositive([1,-4,7,12]);
+
 
 /*
 Opposite number
@@ -32,7 +48,7 @@ But can you do it in 1 line of code and without any conditionals?
 
 
 /*
-String Rpeat
+String Repeat
 8kyu
 
 Write a function called repeatStr which repeats the given string string exactly n times.
@@ -76,7 +92,7 @@ Zero (0) is not checked for any specific sign. Negative zeros make no mathematic
 */
 
 /*
-Find the smallest integer in and array
+Find the smallest integer in an array
 8kyu
 
 Given an array of integers your solution should find the smallest integer.
